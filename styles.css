@@ -1,0 +1,54 @@
+body {
+    background-color: grey;
+    padding: 2%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 1px solid black;
+}
+
+.text__editor {
+    padding: 10px;
+    background-color: white;
+}
+
+.top__bar {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.highlights {
+    display: flex;
+    flex: 0.16;
+    justify-content: space-between;
+}
+
+.highlights > a {
+    padding: 2px 8px;
+    font-size: x-large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.highlights > a:hover {
+    color: steelblue;
+}
+
+.selected__highlight {
+    background-color: lightgray;
+}
+
+.dropdown { 
+    display: flex;
+    margin-left: 40px;
+    background-color: #f6f6f6;
+    min-width: 170px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.input__section {
+    margin: 20px;
+    height: 400px;
+    outline: 1px solid black;
+}

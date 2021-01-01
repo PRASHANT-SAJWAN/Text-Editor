@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="text__editor">
+        <div class="top__bar">
+            <div class="highlights">
+                <a href="javascript:void(0)" id="bold" onclick="format('bold')"> B </a>
+                <a href="javascript:void(0)" id="italic" onclick="format('italic')"> I </a>
+                <a href="javascript:void(0)" id="underline" onclick="format('underline')"> U </a>
+            </div>
+            <div class="dropdown">
+                <input id="input__fontSize" type="text" placeholder="20" onkeypress="myFunction(event)"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+            </div>
+        </div>
+
+        <div id="input__section" class="input__section" contenteditable="true">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
